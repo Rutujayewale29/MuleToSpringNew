@@ -1,0 +1,55 @@
+ {
+ "flow":{ 
+   "def":{         
+      "desc":"",
+        "name":"",
+         "type":"Rest",
+         "muleExtraMapping":{
+         "path":"",
+         "allowedMethod":[]
+          },
+         "project-name":"default"
+         },
+        "flowproperties":{ 
+        "functional":"",
+        "monitoring":{ 
+         "enable":"NO"
+       },
+       "tracking-id":""
+     }
+   },
+   "exceptions":[],
+   "stepException":[],
+   "subFlow":[],
+   "steps":[
+    { 
+         "def":{ 
+          "name":"",
+          "action":"",
+          "version":"",
+          "functional":""
+         },
+         "input":{ 
+         "functional":""
+         },
+         "output":{ 
+         "output":"",
+         "functional":"",
+         "outputschema":{ }
+         },
+         "processing":{ 
+         "logic":[ 
+         
+         ],
+         "functional":""
+         },
+         "onsteperror":{ },
+         "preprocessor":{ 
+         "scenarios":[],
+         "functional":"",
+         "connectionProp":[ ],
+         "pre-conditions":[ ]
+         }
+       }
+   ]
+}

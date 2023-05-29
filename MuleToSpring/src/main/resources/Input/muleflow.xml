@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule>
+<flow name="helloWorldFlow" doc:id="c1969fc5-a9bc-4f00-9150-8a0a35ad3b52" >
+		<http:listener doc:name="Listener" doc:id="b16f3e39-05b7-4af5-8e7b-ae477e8bed18" config-ref="HTTP_Listener_config" path="/helloWorld"/>
+		<logger level="INFO" doc:name="Start Flow" doc:id="e4ec4bad-f6b9-4341-8ead-4ae039684d2e" message="Start Flow"/>
+		<set-payload value="Hello World..!" doc:name="Hello World..!" doc:id="575f657f-cc6d-41b9-969e-4639e06cea34" />
+		<logger level="INFO" doc:name="End Flow" doc:id="3fb72209-f140-4cec-b641-b0031e316931" message="End Flow"/>
+</flow>
+</mule>

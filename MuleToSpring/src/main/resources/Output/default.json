@@ -1,0 +1,115 @@
+{ 
+"flow":{ 
+   "def":{
+       "desc":"",
+       "name":"demo",
+       "type":"REST",
+       "project-name":"default"     
+     },
+     "flowproperties":{
+     "functional":"",
+     "monitoring":{ 
+     "enable":"NO"
+     },
+     "tracking-id":"" 
+        }       
+       },
+       "exceptions":[],
+       "stepException":[],
+       "subFlow":[],
+       "steps":[ 
+       { 
+         "def":{ 
+          "name":"StartFlow",
+          "action":"Utility",
+          "version":"1.0",
+          "functional":""
+         },
+         "input":{ 
+         "functional":""
+         },
+         "output":{ 
+         "output":"",
+         "functional":"",
+         "outputschema":{ }
+         },
+         "processing":{ 
+         "logic":[ 
+         { 
+          "logVal":"Start Flow",
+          "method":"log",
+          "logType":"info"
+         }
+         ],
+         "functional":""
+         },
+         "onsteperror":{ },
+         "preprocessor":{ 
+         "scenarios":[],
+         "functional":"",
+         "connectionProp":[ ],
+         "pre-conditions":[ ]
+         }
+       },
+{ 
+   "def":{ 
+    "name":"APIResponse",
+    "action":"APIResponse",
+    "version":"1.0",
+    "functional":""
+     },
+     "output":{ 
+         "outputschema":{ }
+     },
+     "processing":{ 
+       "logic":[ 
+       { 
+         "key":"String.capitalize(Hello world...,)",
+         "target":"data",
+         "datatype":"string",
+         "mappingtype":"TRANS"
+       }
+       ]
+     },
+     "onsteperror":{ },
+     "preprocessor":{ 
+     "scenarios":[],
+     "connectionProp":[],
+     "pre-conditions":[]
+     }       
+},
+{
+ "def":{ 
+  "name":"Endflow",
+  "action":"Utility",
+  "version":"1.0",
+  "functional":""
+ },
+ "input":{ 
+   "functional":""
+ },
+ "output":{ 
+ "output":"",
+ "functional":"",
+ "outputschema":{ }
+ },
+ "processing":{ 
+  "logic":[ 
+     { 
+      "logVal":"End Flow",
+      "method":"log",
+      "logType":"info"
+     }
+    ],
+    "functional":""
+   },
+   "onsteperror":{ },
+   "preprocessor":{ 
+   "scenarios":[ ],
+   "functional":"",
+   "connectionProp":[ ],
+   "pre-conditions":[ ]
+   }
+   }
+  ]
+}  
